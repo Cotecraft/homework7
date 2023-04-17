@@ -41,24 +41,35 @@ public class Main {
             System.out.println("Год " + year + " Население " + population);
         }
 
-        System.out.println("Задание 4-5");
+        System.out.println("Задание 4-6");
 
         int income= 15000;
         int bank = 0;
         int i = 0;
-        for (; bank <= 12_000_000; i++) {
+        int month = 1;
+        for (; month <= 108; month++) {
             bank = bank + bank/100 * 7;
             bank = bank + income;
             if (i % 6 == 0) {
-                System.out.println("Месяц " + i + " Итого " + bank);
+                System.out.println("Месяц " + month + " Итого " + bank);
             }
         }
 
         System.out.println("Задание 7");
 
-        int friday = 1;
-        int month 31;
-        for
+        int friday = 3;
+        for (; friday <= 31; friday = friday + 7) {
+            System.out.println(friday + ", Пятница, готовь отчет");
+        }
+
+
+        System.out.println("Задание 8");
+
+        int cometFirst = 0;
+        int cometNow = 2023;
+            System.out.println("1896");
+        System.out.println("1975");
+        System.out.println("2054");
+
         }
     }
-}
