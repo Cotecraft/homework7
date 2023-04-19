@@ -15,7 +15,7 @@ public class Main {
 
         int counting = 0;
         while (counting <= 10) {
-            System.out.print (counting +" ");
+            System.out.print(counting + " ");
             counting = counting + 1;
         }
 
@@ -23,7 +23,7 @@ public class Main {
 
         int countingA = 10;
         while (countingA >= 0) {
-            System.out.print (countingA +" ");
+            System.out.print(countingA + " ");
             countingA = countingA - 1;
         }
 
@@ -33,24 +33,24 @@ public class Main {
         int birthRate = 17;
         int mortality = 8;
         int year = 0;
-        for (int i = 0; year <= 9; i = i + 1 ){
+        for (int i = 0; year <= 9; i = i + 1) {
             year = year + 1;
-            birthRate = 17 * year;
-            mortality = 8 * year;
-            population = 12_000_000 + birthRate - mortality;
+            birthRate = population / 1000 * 17;
+            mortality = population / 1000 * 8;
+            population = population + birthRate - mortality;
             System.out.println("Год " + year + " Население " + population);
         }
 
         System.out.println("Задание 4-6");
 
-        int income= 15000;
+        int income = 15000;
         int bank = 0;
         int i = 0;
         int month = 1;
         for (; month <= 108; month++) {
-            bank = bank + bank/100 * 7;
+            bank = bank + bank / 100 * 7;
             bank = bank + income;
-            if (i % 6 == 0) {
+            if (month % 6 == 0) {
                 System.out.println("Месяц " + month + " Итого " + bank);
             }
         }
@@ -65,11 +65,14 @@ public class Main {
 
         System.out.println("Задание 8");
 
-        int cometFirst = 0;
-        int cometNow = 2023;
-            System.out.println("1896");
-        System.out.println("1975");
-        System.out.println("2054");
-
+        int cometYear = 79;
+        int currentYear = 2023;
+        int past200Years = 1823;
+        int next100Years = 2123;
+        for (i = 1823; i < 2123; i++) {
+            if (i % cometYear == 0) {
+                System.out.println(i);
+            }
         }
     }
+}
